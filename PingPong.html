@@ -13,41 +13,42 @@
     <div class="jumbotron">
       <h1>Ping Pong</h1>
     </div>
-
-    <!-- <div class="container"> -->
-      <div class="row">
-        <div class="col-sm-4 green">
-          <h2>About Ping Pong</h2>
-          <h3 class="tan">Created By:</h3>
-          <p class="whiteText">LaTaevia Berry</p>
-          <h3 class="tan">GitHub Username/URL:</h3>
-          <a href="https://github.com/LATAEVIA">LATAEVIA</a>
-          <h3 class="tan">Level 3 Test for:</h3>
-          <p class="whiteText">Intro to Programming</p>
-        </div>
-        <div class="col-sm-7 col-sm-offset-1">
-          <h2>Let's play!</h2>
-          <h3>Rules:</h3>
-          <p>Ping Pong will count up to your number from 1 with thte following exceptions:</p>
-          <ol>
-            <li>Numbers divisible by 3 become 'ping'</li>
-            <li>Numbers divisible by 5 become 'pong'</li>
-            <li>Numbers divisible by 3 and 5 become 'pingpong'</li>
-          </ol>
-
-          <form class="form-inline" id="pingPongInput">
-            <div class="form-group">
-              <label>Enter your number here:</label>
-              <input id="userInput" class="form-control" type="number" placeholder="Enter any number">
-            </div>
-            <button class="btn btn-default" type="submit">Ping Pong!</button>
-          </form>
-          <br>
-          <section>
-            <ul id="output"></ul>
-          </section>
-        </div>
+    <!-- Left Sidebar -->
+    <div class="row">
+      <div class="col-sm-4 green">
+        <h2>About Ping Pong</h2>
+        <h3 class="tan">Created By:</h3>
+        <p class="whiteText">LaTaevia Berry</p>
+        <h3 class="tan">GitHub Username/URL:</h3>
+        <a href="https://github.com/LATAEVIA" target="blank">LATAEVIA</a>
+        <h3 class="tan">Level 3 Test for:</h3>
+        <p class="whiteText">Intro to Programming</p>
       </div>
-    <!-- </div> -->
+      <!-- Ping Pong Instructions-->
+      <div class="col-sm-7 col-sm-offset-1">
+        <h2>Let's play!</h2>
+        <h3>Rules:</h3>
+        <p>Ping Pong will count up to your number from 1 with thte following exceptions:</p>
+        <ol>
+          <li>Numbers divisible by 3 become 'ping'</li>
+          <li>Numbers divisible by 5 become 'pong'</li>
+          <li>Numbers divisible by 3 and 5 become 'pingpong'</li>
+        </ol>
+        <!-- User Input -->
+        <form class="form-inline" id="pingPongInput">
+          <div class="form-group">
+            <label>Enter your number here:</label>
+            <input id="userInput" class="form-control" type="number" placeholder="Enter any number">
+          </div>
+          <button class="btn btn-default" type="submit">Ping Pong!</button>
+        </form>
+        <br>
+        <!-- Output -->
+        <section>
+          <ul id="output"></ul>
+        </section>
+        
+      </div>
+    </div>
   </body>
 </html>
