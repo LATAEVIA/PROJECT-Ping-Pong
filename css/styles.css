@@ -1,7 +1,21 @@
-.btn {
-  display: block;
+body {
+  background-color: #EBEBEB;
 }
-
-#quote {
-  display: none;
+.jumbotron {
+  text-align: center;
+  background-color: #D6C9A0
+}
+.tan {
+  color: #D6C9A0;
+}
+.whiteText {
+  color: #fff;
+}
+.green {
+  background-color: #77B266;
+  height:100vh;
+  padding-left: 60px;
+}
+.btn-default {
+  background-color: #A6A6A6;
 }
