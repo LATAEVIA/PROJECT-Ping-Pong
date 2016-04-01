@@ -23,33 +23,46 @@
 //     }
 //   });
 // });
+//
+// if ((index % 3 === 0) && (index % 5 === 0)) {
+//     $("#output").append("<li>pingpong</li>");
+// }
+// else if (index % 3 === 0) {
+//     $("#output").append("<li>ping</li>");
+// }
+// else if (index % 5 === 0) {
+//     $("#output").append("<li>pong</li>");
+// }
+// else {
+//     $("#output").append("<li>" + index + "</li>");
+// }
 
 
 // Business Logic
-var pingPongFunction = function(userInput){
-  for (index = 1; index <= userInput; index++) {
+function pingPongFunct(pingPongBot){
+  var pingPongResults = [];
+  for (index = 1; index <= pingPongBot; index++) {
     if ((index % 3 === 0) && (index % 5 === 0)) {
-        $("#output").append("<li>pingpong</li>");
+        pingPongResults.push('<li>pingpong</li>');
     }
     else if (index % 3 === 0) {
-        $("#output").append("<li>ping</li>");
+        pingPongResults.push("<li>ping</li>");
     }
     else if (index % 5 === 0) {
-        $("#output").append("<li>pong</li>");
+        pingPongResults.push("<li>pong</li>");
     }
     else {
-        $("#output").append("<li>" + index + "</li>");
+        pingPongResults.push("<li>" + index + "</li>");
     }
-  }
+  }return pingPongResults;
 };
 
 // User Interface Logic
 $(document).ready(function() {
   $("form#pingPongInput").submit(function(event){
     event.preventDefault();
-    var userInput = parseInt($("input#userInput").val());
-    pingPongFunction(userInput)
-      // $("#output").empty().append(result);
-      // var pong = $("#output").empty().append("pong");
+    var input = parseInt($("input#userInput").val());
+    var results = pingPongFunct(input);
+    $("#output").empty().append(results);
   });
 });
